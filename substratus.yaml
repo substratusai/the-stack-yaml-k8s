@@ -1,19 +1,12 @@
 apiVersion: substratus.ai/v1
 kind: Dataset
 metadata:
-  name: k8s-instruct
+  name: the-stack-yaml-k8s
 spec:
   env:
     HUGGING_FACE_HUB_TOKEN: "${{ secrets.ai.HUGGING_FACE_HUB_TOKEN }}"
-  build:
-    git:
-      url: https://github.com/substratusai/images
-      path: base
-      branch: include-ipywidgets-in-base
   resources:
     disk: 300
-    cpu: 32
-    memory: 64
 #  resources:
 #    gpu:
 #      type: nvidia-l4
