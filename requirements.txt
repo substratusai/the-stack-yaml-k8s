@@ -1,0 +1,3 @@
+datasets
+kubernetes-validate
+PyYAML

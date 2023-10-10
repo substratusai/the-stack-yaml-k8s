@@ -7,7 +7,3 @@ spec:
     HUGGING_FACE_HUB_TOKEN: "${{ secrets.ai.HUGGING_FACE_HUB_TOKEN }}"
   resources:
     disk: 300
-#  resources:
-#    gpu:
-#      type: nvidia-l4
-#      count: 2

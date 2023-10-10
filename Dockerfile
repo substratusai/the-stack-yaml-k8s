@@ -1,3 +1,4 @@
 FROM substratusai/base:latest
-RUN pip3 install --no-cache-dir ipywidgets datasets
+COPY requirements.txt .
+RUN pip3 install --no-cache-dir -r requirements.txt
 COPY k8s-instruct-dataset-v1.ipynb .
